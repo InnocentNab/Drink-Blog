@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="top-right">
+            <label for="">Filter by</label><br>
+            <form action="">
+                <select name="All" id="select" onchange="selectChangeHandler()">
+                    <option value=""><a href="">All</a></option>
+                    <option value=""><a href="">Beer</a></option>
+                    <option value=""><a href="">Wine</a></option>
+                    <option value=""><a href="">Spirits</a></option>
+                    <option value=""><a href="">Cider</a></option>
+                </select>
+            </form>
+        </div>
+        <br>
+        <div class="top-left">
+            <label for="">Search:</label><br>
+            <input type="search" id="search" onkeyup="searchChangeHandler()"> <br> <br>
+        </div>
+        <div class="products" id="products">
+            <!-- <div class="product">
+                <img src="drinks-images/Product_1.png" alt="">
+                <div>
+                    <a href="">Pure Blonde Crate</a>
+                    <div>$49.99</div>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
